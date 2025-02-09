@@ -32,30 +32,16 @@ There are some more way to improve the results:
 
 
 * Parallel Processing:
-- For very large arrays, we could parallelize the merging process
-- Different pairs of arrays could be merged simultaneously
-- This would significantly improve performance on multi-core systems
+ - For very large arrays, we could parallelize the merging process
+ - Different pairs of arrays could be merged simultaneously
+ - This would significantly improve performance on multi-core systems
 
 
-Memory Optimization:
+* Memory Optimization:
 
-Current implementation creates a new result array
-Could modify to work in-place if memory is a constraint
-Would increase time complexity but save space
-
-
-Early Termination:
-
-If we only need the first M elements of the merged array
-Could modify the algorithm to stop after finding M elements
-Would improve performance for partial results
-
-
-Custom Heap Implementation:
-
-Current implementation uses Python's heapq
-Could implement a specialized heap structure optimized for this specific use case
-Might improve constant factors in performance
+  - Current implementation creates a new result array
+  - Could modify to work in-place if memory is a constraint
+  - Would increase time complexity but save space
 
 
 
