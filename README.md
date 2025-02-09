@@ -43,5 +43,5 @@ There are some more way to improve the results:
   - Could modify to work in-place if memory is a constraint
   - Would increase time complexity but save space
 
-
+## 2.Problem 2 (Remove Duplicates from Sorted Array)
 
