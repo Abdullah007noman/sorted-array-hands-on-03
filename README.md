@@ -1,4 +1,7 @@
 # sorted-array-hands-on-03
+This repository contains implementations of :
+* Given K sorted arrays of sieze N and need to merge them all.
+* Given a sorted array of sieze N and need to remove the duplicate elements from the array.
 ## Time Complexity Analysis:
 
 
