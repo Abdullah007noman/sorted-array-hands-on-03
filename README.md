@@ -21,7 +21,7 @@ This repository contains implementations of :
 * Result array: O(K×N) - stores all elements
 * Total space complexity: O(K×N)
 
-## Improvements of implementation
+## Improvements of the implementation
 
 The current implementation (in this repository) using a min-heap is generally considered optimal for most practical cases, as it achieves O(K×N × log K) time complexity, which is asymptotically optimal for this problem. The choice between these improvements would depend on specific use cases and constraints (memory limitations, parallel processing availability, etc.)
 There are some more way to improve the results:
@@ -43,5 +43,46 @@ There are some more way to improve the results:
   - Could modify to work in-place if memory is a constraint
   - Would increase time complexity but save space
 
-## 2.Problem 2 (Remove Duplicates from Sorted Array)
+## 2.Remove Duplicates from Sorted Array (for problem 02)
+## How the algorithm works:
+* Uses two-pointer technique
+* unique_ptr keeps track of where to place next unique element
+* Iterates through array once
+* Returns length of array with duplicates removed
+
+## Time Complexity:
+* The algorithm uses a single pass through the array
+* Each element is visited exactly once
+* Time Complexity: O(n) where n is the size of the array
+
+
+##  Improvements of the implementation
+* Error Handling:
+   - Add input validation
+   - Handle negative numbers explicitly
+   - Add bounds checking
+
+
+* Performance Optimizations:
+    - For very large arrays, could implement parallel processing for the comparison phase
+    - Could add early termination if no duplicates are found after a certain point
+    - Could implement batch processing for very large arrays
+
+
+* Memory Optimization:
+  - Current solution is already O(1) space complexity
+  - Could add option to shrink array capacity after removal (trade-off with performance)
+
+
+## The current implementation is optimal for the given constraints:
+
+* It runs in O(n) time
+* Uses O(1) extra space
+* Modifies array in-place as required
+* Maintains relative order of elements
+* Doesn't use set container as specified
+
+
+
+
 
