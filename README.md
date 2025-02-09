@@ -1,5 +1,5 @@
 # sorted-array-hands-on-03
-** Time Complexity Analysis:
+## Time Complexity Analysis:
 
 
 Let K be the number of arrays and N be the size of each array
