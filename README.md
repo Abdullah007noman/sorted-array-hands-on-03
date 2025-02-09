@@ -32,9 +32,9 @@ There are some more way to improve the results:
 
 
 * Parallel Processing:
- - For very large arrays, we could parallelize the merging process
- - Different pairs of arrays could be merged simultaneously
- - This would significantly improve performance on multi-core systems
+  - For very large arrays, we could parallelize the merging process
+  - Different pairs of arrays could be merged simultaneously
+  - This would significantly improve performance on multi-core systems
 
 
 * Memory Optimization:
