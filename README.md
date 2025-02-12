@@ -1,9 +1,28 @@
-# sorted-array-hands-on-03
+# hands-on-03
 This repository contains implementations of :
+* Implementation and debugging of the Fibonacci sequence with recursive calls tracking.
 * Given K sorted arrays of sieze N and need to merge them all.(Min-heap)
 * Given a sorted array of sieze N and need to remove the duplicate elements from the array.
 
-## 1. Min-heap (for problem-1)
+
+# 1. Fibonacci Sequence
+The complete call sequence can be summarized as:
+  - fib(5) → fib(4) + fib(3)
+  - fib(4) → fib(3) + fib(2)
+  - fib(3) → fib(2) + fib(1)
+  - fib(2) → fib(1) + fib(0)
+
+Key points about the implementation:
+
+* Followed exact return statement format: return fib(n-1) + fib(n-2)
+* No optimization used as requested
+* Proper base cases implemented
+* Complete tracking of all recursive calls
+* Indentation added to visualize the call stack depth
+
+The final result fib(5) = 5 is calculated through multiple recursive calls, with each call building up from the base cases (fib(0) = 0 and fib(1) = 1).
+
+## 2. Min-heap (for problem-1)
 ## Time Complexity:
 
 
@@ -43,7 +62,7 @@ There are some more way to improve the results:
   - Could modify to work in-place if memory is a constraint
   - Would increase time complexity but save space
 
-## 2.Remove Duplicates from Sorted Array (for problem 02)
+## 3. Remove Duplicates from Sorted Array (for problem 02)
 ## How the algorithm works:
 * Uses two-pointer technique
 * unique_ptr keeps track of where to place next unique element
